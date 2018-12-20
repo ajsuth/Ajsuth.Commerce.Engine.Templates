@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{A540BC76-0641-424F-8CA5-03E0E10D334B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajsuth.Commerce.Engine.Templates</RootNamespace>
+    <AssemblyName>Ajsuth.Commerce.Engine.Templates</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <StartAction>Program</StartAction>
+    <StartProgram Condition="'$(DevEnvDir)' != ''">$(DevEnvDir)devenv.exe</StartProgram>
+    <StartArguments>/rootsuffix Exp</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="Sitecore.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="stylesheet.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Item Templates\Commands\Ajsuth.Commerce.Engine.CommerceCommand\Ajsuth.Commerce.Engine.CommerceCommand.csproj">
+      <Project>{DFE6C5BB-A3D9-45C3-B2AF-E1F0E06ACF1D}</Project>
+      <Name>Ajsuth.Commerce.Engine.CommerceCommand</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Components\Ajsuth.Commerce.Engine.Component\Ajsuth.Commerce.Engine.Component.csproj">
+      <Project>{6F07E11F-3B57-4CB7-ACD7-F7384B84FB98}</Project>
+      <Name>Ajsuth.Commerce.Engine.Component</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Controllers\Ajsuth.Commerce.Engine.ApiController\Ajsuth.Commerce.Engine.ApiController.csproj">
+      <Project>{F49FFC94-04E1-4E6C-9156-3AADE96410AB}</Project>
+      <Name>Ajsuth.Commerce.Engine.ApiController</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Controllers\Ajsuth.Commerce.Engine.CommandsController\Ajsuth.Commerce.Engine.CommandsController.csproj">
+      <Project>{CFF9138A-6CC2-458A-AA74-A72C42B2A5D5}</Project>
+      <Name>Ajsuth.Commerce.Engine.CommandsController</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Controllers\Ajsuth.Commerce.Engine.EntityController\Ajsuth.Commerce.Engine.EntityController.csproj">
+      <Project>{10073272-16F8-49E9-9E49-7542C767DE41}</Project>
+      <Name>Ajsuth.Commerce.Engine.EntityController</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Entities\Ajsuth.Commerce.Engine.Entities\Ajsuth.Commerce.Engine.Entities.csproj">
+      <Project>{6F938A53-4E2B-4DCD-B08B-9DD99F15C9C0}</Project>
+      <Name>Ajsuth.Commerce.Engine.Entities</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Environments\Ajsuth.Commerce.Engine.PolicySet\Ajsuth.Commerce.Engine.PolicySet.csproj">
+      <Project>{2E1E8603-A065-403A-8710-5268218E6F0A}</Project>
+      <Name>Ajsuth.Commerce.Engine.PolicySet</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Minions\Ajsuth.Commerce.Engine.MinionBoss\Ajsuth.Commerce.Engine.MinionBoss.csproj">
+      <Project>{17FDEA8D-8757-4FCB-B6CD-754EA4E94C4C}</Project>
+      <Name>Ajsuth.Commerce.Engine.MinionBoss</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Minions\Ajsuth.Commerce.Engine.Minion\Ajsuth.Commerce.Engine.Minion.csproj">
+      <Project>{81519A83-E951-45DF-9E26-EE3648BCFBE1}</Project>
+      <Name>Ajsuth.Commerce.Engine.Minion</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Models\Ajsuth.Commerce.Engine.Models\Ajsuth.Commerce.Engine.Models.csproj">
+      <Project>{44DB67C2-86A1-415E-B941-C022A8A7AE49}</Project>
+      <Name>Ajsuth.Commerce.Engine.Models</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Pipelines\Ajsuth.Commerce.Engine.Pipeline\Ajsuth.Commerce.Engine.Pipeline.csproj">
+      <Project>{2BF40A21-21BB-44AB-ABAA-858571A9E0B3}</Project>
+      <Name>Ajsuth.Commerce.Engine.Pipeline</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Pipelines\Pipeline Arguments\Ajsuth.Commerce.Engine.PipelineArgument\Ajsuth.Commerce.Engine.PipelineArgument.csproj">
+      <Project>{6B0AA620-939C-4A68-8426-9A117A456F4C}</Project>
+      <Name>Ajsuth.Commerce.Engine.PipelineArgument</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Pipelines\Pipeline Blocks\Ajsuth.Commerce.Engine.ConfigureServiceApiBlock\Ajsuth.Commerce.Engine.ConfigureServiceApiBlock.csproj">
+      <Project>{671780F1-5797-4DCB-A23F-B5585BF816B5}</Project>
+      <Name>Ajsuth.Commerce.Engine.ConfigureServiceApiBlock</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Pipelines\Pipeline Blocks\Ajsuth.Commerce.Engine.PipelineBlock\Ajsuth.Commerce.Engine.PipelineBlock.csproj">
+      <Project>{9B150206-EC53-4BC1-B456-57FFF97F2F9C}</Project>
+      <Name>Ajsuth.Commerce.Engine.PipelineBlock</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Policies\Ajsuth.Commerce.Engine.Policy\Ajsuth.Commerce.Engine.Policy.csproj">
+      <Project>{5B21A132-7A3B-4B6C-AF17-991E77936728}</Project>
+      <Name>Ajsuth.Commerce.Engine.Policy</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Root\Ajsuth.Commerce.Engine.ConfigureSitecore\Ajsuth.Commerce.Engine.ConfigureSitecore.csproj">
+      <Project>{1A5238A5-D1D0-4910-8BB8-67C7C8B7320E}</Project>
+      <Name>Ajsuth.Commerce.Engine.ConfigureSitecore</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Root\Ajsuth.Commerce.Engine.Constants\Ajsuth.Commerce.Engine.Constants.csproj">
+      <Project>{8956A415-5228-4EDD-AB10-482E134DCE4F}</Project>
+      <Name>Ajsuth.Commerce.Engine.Constants</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Rules\Actions\Ajsuth.Commerce.Engine.CartAction\Ajsuth.Commerce.Engine.CartAction.csproj">
+      <Project>{BE8C1943-ACF3-402A-9AC5-24F1A6EC95DC}</Project>
+      <Name>Ajsuth.Commerce.Engine.CartAction</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Rules\Conditions\Ajsuth.Commerce.Engine.InventoryItemCondition\Ajsuth.Commerce.Engine.InventoryItemCondition.csproj">
+      <Project>{A137CF02-B9EA-4819-8DB5-EE24E98DB135}</Project>
+      <Name>Ajsuth.Commerce.Engine.InventoryItemCondition</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

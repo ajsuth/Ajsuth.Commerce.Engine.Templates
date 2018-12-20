@@ -1,0 +1,11 @@
+﻿{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "Id": "Entity-PolicySet-$safeitemrootname$",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "$safeitemrootname$",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": []
+  }
+}

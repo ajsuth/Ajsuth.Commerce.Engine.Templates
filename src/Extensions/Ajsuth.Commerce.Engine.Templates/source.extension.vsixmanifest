@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="Ajsuth.Commerce.Engine.Templates.5cb15241-095c-42ed-bae7-cc84391447c6" Version="1.0" Language="en-US" Publisher="Andrew Sutherland" />
+        <DisplayName>Sitecore Commerce Engine Templates</DisplayName>
+        <Description xml:space="preserve">A collection of templates to assist with Sitecore Commerce development</Description>
+        <Icon>Sitecore.ico</Icon>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CommerceCommand" d:TargetPath="|Ajsuth.Commerce.Engine.CommerceCommand;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Component" d:TargetPath="|Ajsuth.Commerce.Engine.Component;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.ApiController" d:TargetPath="|Ajsuth.Commerce.Engine.ApiController;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CommandsController" d:TargetPath="|Ajsuth.Commerce.Engine.CommandsController;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.EntityController" d:TargetPath="|Ajsuth.Commerce.Engine.EntityController;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Entities" d:TargetPath="|Ajsuth.Commerce.Engine.Entities;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.PolicySet" d:TargetPath="|Ajsuth.Commerce.Engine.PolicySet;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Minion" d:TargetPath="|Ajsuth.Commerce.Engine.Minion;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.MinionBoss" d:TargetPath="|Ajsuth.Commerce.Engine.MinionBoss;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Models" d:TargetPath="|Ajsuth.Commerce.Engine.Models;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Pipeline" d:TargetPath="|Ajsuth.Commerce.Engine.Pipeline;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.PipelineArgument" d:TargetPath="|Ajsuth.Commerce.Engine.PipelineArgument;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.PipelineBlock" d:TargetPath="|Ajsuth.Commerce.Engine.PipelineBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Policy" d:TargetPath="|Ajsuth.Commerce.Engine.Policy;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.ConfigureSitecore" d:TargetPath="|Ajsuth.Commerce.Engine.ConfigureSitecore;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Constants" d:TargetPath="|Ajsuth.Commerce.Engine.Constants;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CartAction" d:TargetPath="|Ajsuth.Commerce.Engine.CartAction;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.ConfigureServiceApiBlock" d:TargetPath="|Ajsuth.Commerce.Engine.ConfigureServiceApiBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.InventoryItemCondition" d:TargetPath="|Ajsuth.Commerce.Engine.InventoryItemCondition;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

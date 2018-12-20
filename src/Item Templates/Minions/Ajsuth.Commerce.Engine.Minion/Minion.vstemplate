@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Minion</Name>
+    <Description>Creates an empty Minion definition. Appends Minion.cs to Item Name.</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>c5a4dc4b-73a2-4ddb-860b-e413198631d0</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>250</SortOrder>
+    <DefaultName>Minion.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="$fileinputname$Minion.cs" ReplaceParameters="true">Minion.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

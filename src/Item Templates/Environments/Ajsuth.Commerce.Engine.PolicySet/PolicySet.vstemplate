@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Policy Set</Name>
+    <Description>An empty Policy Set definition</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>d0abcc04-7139-4e9b-b384-8dca1aafd126</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>700</SortOrder>
+    <DefaultName>PolicySet.json</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+    <ProjectItem TargetFileName="$fileinputname$PolicySet.json" ReplaceParameters="true">PolicySet.json</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

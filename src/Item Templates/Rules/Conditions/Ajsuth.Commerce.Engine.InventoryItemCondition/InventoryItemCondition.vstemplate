@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Inventory Item Condition</Name>
+    <Description>Creates a inventory item condition definition. Appends 'Condition.cs' to Item Name.</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>fcb0626f-2bf6-434c-ae72-6f70ba847953</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <SortOrder>600</SortOrder>
+    <DefaultName>InventoryItemCondition.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+    <ProjectItem TargetFileName="$fileinputname$Condition.cs" ReplaceParameters="true">InventoryItemCondition.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

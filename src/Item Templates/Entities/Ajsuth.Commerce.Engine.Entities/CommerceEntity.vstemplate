@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Commerce Entity</Name>
+    <Description>A basic Commerce Entity definition</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>a3485637-ccdc-4396-a16e-55696ebb4016</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>200</SortOrder>
+    <DefaultName>Entity.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem ReplaceParameters="true">CommerceEntity.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

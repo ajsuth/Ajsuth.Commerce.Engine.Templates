@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <Name>Component</Name>
+    <Description>Creates an empty Component definition. Appends Component.cs to Item Name.</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>ef8dfaf8-f080-47c1-a6b3-66f5b4787448</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>100</SortOrder>
+    <DefaultName>Component.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="$fileinputname$Component.cs" ReplaceParameters="true">Component.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

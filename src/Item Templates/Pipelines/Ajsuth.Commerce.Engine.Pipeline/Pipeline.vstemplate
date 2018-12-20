@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Pipeline</Name>
+    <Description>A Sitecore Commerce Pipeline definition and interface</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>c022b398-7bbf-41d1-af2a-21f80f8fc48a</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>350</SortOrder>
+    <DefaultName>Pipeline.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="$fileinputname$Pipeline.cs" ReplaceParameters="true">Pipeline.cs</ProjectItem>
+    <ProjectItem TargetFileName="I$fileinputname$Pipeline.cs" ReplaceParameters="true">IPipeline.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

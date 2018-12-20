@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Pipeline Argument</Name>
+    <Description>Creates an empty Pipeline Argument definition. Appends Argument.cs to Item Name.</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>7d1d0e46-f483-4651-80f2-72ef719eb4ff</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <SortOrder>400</SortOrder>
+    <DefaultName>PipelineArgument.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+    <ProjectItem TargetFileName="$fileinputname$Argument.cs" ReplaceParameters="true">PipelineArgument.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

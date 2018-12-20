@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Constants</Name>
+    <Description>Creates an empty Constants definition. Appends 'Constants.cs' to the class Name.</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>bcef75bf-5b85-40cc-bee8-70a9df111af0</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+    <SortOrder>760</SortOrder>
+    <DefaultName>Constants.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+    <ProjectItem TargetFileName="$fileinputname$Constants.cs" ReplaceParameters="true">Constants.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
