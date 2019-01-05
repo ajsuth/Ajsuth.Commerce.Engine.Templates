@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="PipelineArgument.vstemplate">
-      <OutputSubPath>Sitecore Commerce\Pipelines\Pipeline Arguments</OutputSubPath>
+      <OutputSubPath>Sitecore Commerce\Pipelines\Arguments</OutputSubPath>
       <SubType>Designer</SubType>
     </VSTemplate>
   </ItemGroup>

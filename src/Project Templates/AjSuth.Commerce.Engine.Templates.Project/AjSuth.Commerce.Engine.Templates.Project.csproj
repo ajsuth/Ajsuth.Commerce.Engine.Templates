@@ -62,7 +62,7 @@
     <None Include="ProjectTemplate.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="AjSuth.Commerce.Engine.Templates.Project.vstemplate">
+    <VSTemplate Include="Project.vstemplate">
       <OutputSubPath>Sitecore Commerce\Plugin Projects</OutputSubPath>
     </VSTemplate>
   </ItemGroup>
