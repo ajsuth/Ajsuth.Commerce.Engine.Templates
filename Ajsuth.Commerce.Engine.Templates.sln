@@ -77,6 +77,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajsuth.Commerce.Engine.Cart
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajsuth.Commerce.Engine.InventoryItemCondition", "src\Item Templates\Rules\Conditions\Ajsuth.Commerce.Engine.InventoryItemCondition\Ajsuth.Commerce.Engine.InventoryItemCondition.csproj", "{A137CF02-B9EA-4819-8DB5-EE24E98DB135}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Templates", "Project Templates", "{C1B06E1E-8885-45A9-91A9-341E8BC55ABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjSuth.Commerce.Engine.Templates.Project", "src\Project Templates\AjSuth.Commerce.Engine.Templates.Project\AjSuth.Commerce.Engine.Templates.Project.csproj", "{DA7C7E81-8214-473B-9D77-8F9C7C4667D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +167,10 @@ Global
 		{A137CF02-B9EA-4819-8DB5-EE24E98DB135}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A137CF02-B9EA-4819-8DB5-EE24E98DB135}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A137CF02-B9EA-4819-8DB5-EE24E98DB135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7C7E81-8214-473B-9D77-8F9C7C4667D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7C7E81-8214-473B-9D77-8F9C7C4667D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7C7E81-8214-473B-9D77-8F9C7C4667D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7C7E81-8214-473B-9D77-8F9C7C4667D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -203,6 +211,7 @@ Global
 		{8956A415-5228-4EDD-AB10-482E134DCE4F} = {AF8A3689-9F59-4585-9929-C6281A8DA1FC}
 		{BE8C1943-ACF3-402A-9AC5-24F1A6EC95DC} = {DD22A77D-4FAC-4482-BE9B-8D2B1D8E6FA2}
 		{A137CF02-B9EA-4819-8DB5-EE24E98DB135} = {ACD44152-84C4-461A-B46E-1FD9EC6F0ED0}
+		{DA7C7E81-8214-473B-9D77-8F9C7C4667D9} = {C1B06E1E-8885-45A9-91A9-341E8BC55ABB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB684E97-574E-4DB9-8369-AE7ACB0F0801}
