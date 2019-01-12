@@ -17,7 +17,7 @@ namespace $rootnamespace$
     /// <summary>
     /// Defines a cart action
     /// </summary>
-    [EntityIdentifier("$safeitemname$")]
+    [EntityIdentifier(nameof($safeitemname$))]
     public class $safeitemname$ : ICartAction
     {
         /// <summary>
@@ -36,9 +36,11 @@ namespace $rootnamespace$
                 return;
             }
 
+            /* Add business logic here to validate custom parameters */
+
             var discountValue = new Decimal();
 
-            /* Add business logic here */
+            /* Add business logic here to calculate discount value */
 
             if (discountValue == Decimal.Zero)
             {

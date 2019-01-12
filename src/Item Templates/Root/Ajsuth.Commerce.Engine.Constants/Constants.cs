@@ -11,14 +11,6 @@ namespace $rootnamespace$
     /// </summary>
     public class $safeitemrootname$
     {
-		/// <summary>
-        /// The names of the controller actions.
-        /// </summary>
-        public static class ControllerActions
-        {
-
-        }
-
         /// <summary>
         /// The names of the pipelines.
         /// </summary>
@@ -27,7 +19,7 @@ namespace $rootnamespace$
             // /// <summary>
             // /// The [sample] pipeline name.
             // /// </summary>
-            // public const string [Sample] = "[project friendly name].Pipeline.[Sample]";
+            // public const string [sample] = "[project friendly name].Pipeline.[sample]";
 
             /// <summary>
             /// The names of the pipeline blocks.
@@ -37,7 +29,29 @@ namespace $rootnamespace$
                 // /// <summary>
                 // /// The [sample] block name.
                 // /// </summary>
-                // public const string [Sample] = "[project friendly name].Block.[Sample]";
+                // public const string [sample] = "[project friendly name].Block.[sample]";
+            }
+        }
+
+        /// <summary>
+        /// The names of the routes.
+        /// </summary>
+        public static class Routes
+        {
+            ///// <summary>
+            ///// The [sample] route.
+            ///// </summary>
+            //public const string [sample] = "[sample]()";
+
+            /// <summary>
+            /// The names of the parameters.
+            /// </summary>
+            public static class Parameters
+            {
+                ///// <summary>
+                ///// The [sample].
+                ///// </summary>
+                //public const string [sample] = "[sample]";
             }
         }
     }

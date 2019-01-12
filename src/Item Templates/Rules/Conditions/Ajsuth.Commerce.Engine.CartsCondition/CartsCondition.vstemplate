@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Inventory Item Condition</Name>
-    <Description>Creates an inventory item condition definition. Uses Catalog's default Inventory Set. Appends 'Condition.cs' to Item Name.</Description>
+    <Name>Cart Condition</Name>
+    <Description>Creates a cart condition definition. Appends 'Condition.cs' to Item Name.</Description>
     <Icon>Sitecore.ico</Icon>
-    <TemplateID>fcb0626f-2bf6-434c-ae72-6f70ba847953</TemplateID>
+    <TemplateID>b54a9330-a947-4a54-8c5a-410766f77501</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
-    <SortOrder>600</SortOrder>
-    <DefaultName>InventoryItemCondition.cs</DefaultName>
+    <SortOrder>620</SortOrder>
+    <DefaultName>CartCondition.cs</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References/>
-    <ProjectItem TargetFileName="$fileinputname$Condition.cs" ReplaceParameters="true">InventoryItemCondition.cs</ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$Condition.cs" ReplaceParameters="true">CartsCondition.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

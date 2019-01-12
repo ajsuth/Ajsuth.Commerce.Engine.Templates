@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Inventory Item Condition</Name>
-    <Description>Creates an inventory item condition definition. Uses Catalog's default Inventory Set. Appends 'Condition.cs' to Item Name.</Description>
+    <Name>Get Entity Navigation Block</Name>
+    <Description>Creates a Get Entity Navigation Block. Enter the entity name as the class name. Will rename to Get&lt;Class Name&gt;NavigationBlock.cs</Description>
     <Icon>Sitecore.ico</Icon>
-    <TemplateID>fcb0626f-2bf6-434c-ae72-6f70ba847953</TemplateID>
+    <TemplateID>017f94d3-a6d5-4650-8779-6e630ab7f911</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
-    <SortOrder>600</SortOrder>
-    <DefaultName>InventoryItemCondition.cs</DefaultName>
+    <SortOrder>470</SortOrder>
+    <DefaultName>Entity</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References/>
-    <ProjectItem TargetFileName="$fileinputname$Condition.cs" ReplaceParameters="true">InventoryItemCondition.cs</ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.cs" ReplaceParameters="true">GetEntityNavigationBlock.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>
