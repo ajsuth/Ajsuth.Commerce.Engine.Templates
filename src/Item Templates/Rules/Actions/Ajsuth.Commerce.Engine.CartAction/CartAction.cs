@@ -28,7 +28,7 @@ namespace $rootnamespace$
         /// </param>
         public void Execute(IRuleExecutionContext context)
         {
-            var commerceContext = context.Fact<CommerceContext>(null);
+            var commerceContext = context.Fact<CommerceContext>();
 
             var cart = commerceContext?.GetObject<Cart>();
             if (cart == null || !cart.Lines.Any())
@@ -49,7 +49,7 @@ namespace $rootnamespace$
 
             if (commerceContext.GetPolicy<GlobalPricingPolicy>().ShouldRoundPriceCalc)
             {
-                discountValue = Decimal.Round(
+                discountValue = decimal.Round(
                         discountValue,
                         commerceContext.GetPolicy<GlobalPricingPolicy>().RoundDigits,
                         commerceContext.GetPolicy<GlobalPricingPolicy>().MidPointRoundUp ?
@@ -60,7 +60,7 @@ namespace $rootnamespace$
 
             var discount = commerceContext.GetPolicy<KnownCartAdjustmentTypesPolicy>().Discount;
             var propertiesModel = commerceContext.GetObject<PropertiesModel>();
-            var amount = discountValue * Decimal.MinusOne;
+            var amount = discountValue * decimal.MinusOne;
             cart.Adjustments.Add(new CartLevelAwardedAdjustment()
             {
                 Name = propertiesModel?.GetPropertyValue("PromotionText") as string ?? discount,

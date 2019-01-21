@@ -20,7 +20,7 @@ namespace $rootnamespace$
     ///         Namespace.PipelineArgumentOrEntity}
     ///     </cref>
     /// </seealso>
-    /// <seealso cref="T:$rootnamespace$.safeitemrootname" />
+    /// <seealso cref="T:$rootnamespace$.$safeitemrootname$" />
     public class $safeitemrootname$ : CommercePipeline<PipelineArgumentOrEntity, PipelineArgumentOrEntity>, I$safeitemrootname$
 	{
 		/// <inheritdoc />

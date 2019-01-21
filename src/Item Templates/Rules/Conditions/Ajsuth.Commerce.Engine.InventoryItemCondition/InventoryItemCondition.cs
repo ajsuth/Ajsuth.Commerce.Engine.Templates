@@ -55,7 +55,7 @@ namespace $rootnamespace$
         /// </returns>
         public bool Evaluate(IRuleExecutionContext context)
         {
-            var commerceContext = context.Fact<CommerceContext>(null);
+            var commerceContext = context.Fact<CommerceContext>();
             if (commerceContext == null)
             {
                 commerceContext.Logger.LogError($"{nameof($safeitemname$)}: Cannot determine commerce context.");
