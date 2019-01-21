@@ -146,6 +146,13 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Pipelines\Blocks\Ajsuth.Commerce.Engine.GetDashboardBlock\Ajsuth.Commerce.Engine.GetDashboardBlock.csproj">
+      <Project>{35488142-610D-44FA-80FA-6780F83DFB37}</Project>
+      <Name>Ajsuth.Commerce.Engine.GetDashboardBlock</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\..\Item Templates\Pipelines\Blocks\Ajsuth.Commerce.Engine.GetEntityNavigationBlock\Ajsuth.Commerce.Engine.GetEntityNavigationBlock.csproj">
       <Project>{1BB939CC-A8EF-4E0E-A978-34163BA3A144}</Project>
       <Name>Ajsuth.Commerce.Engine.GetEntityNavigationBlock</Name>

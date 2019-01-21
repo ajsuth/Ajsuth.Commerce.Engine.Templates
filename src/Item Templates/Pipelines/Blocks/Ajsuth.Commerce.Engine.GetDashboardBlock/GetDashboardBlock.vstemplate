@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Get Entity Navigation Block</Name>
-    <Description>Creates a Get Entity Navigation Block for extending the Business Tools. Enter the entity name as the class name. Will rename to Get&lt;Name&gt;NavigationBlock.cs</Description>
+    <Name>Get Entity Dashboard Block</Name>
+    <Description>Creates a Get Entity Dashboard Block for extending the Business Tools. Enter the entity name as the class name. Will rename to Get&lt;Name&gt;NavigationBlock.cs</Description>
     <Icon>Sitecore.ico</Icon>
-    <TemplateID>017f94d3-a6d5-4650-8779-6e630ab7f911</TemplateID>
+    <TemplateID>33704e87-36a1-4b08-97ab-10be2c308aad</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
-    <SortOrder>470</SortOrder>
+    <SortOrder>475</SortOrder>
     <DefaultName>Entity</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References/>
-    <ProjectItem TargetFileName="Get$fileinputname$NavigationBlock.cs" ReplaceParameters="true">GetEntityNavigationBlock.cs</ProjectItem>
+    <ProjectItem TargetFileName="Get$fileinputname$DashboardBlock.cs" ReplaceParameters="true">GetDashboardBlock.cs</ProjectItem>
     <CustomParameters>
       <CustomParameter Name="$entity$" Value="$fileinputname$"/>
     </CustomParameters>

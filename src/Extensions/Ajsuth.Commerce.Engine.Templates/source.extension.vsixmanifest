@@ -43,6 +43,7 @@
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.ShopsCondition" d:TargetPath="|Ajsuth.Commerce.Engine.ShopsCondition;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CartLineAction2" d:TargetPath="|Ajsuth.Commerce.Engine.CartLineAction2;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CartLineSellPriceAction" d:TargetPath="|Ajsuth.Commerce.Engine.CartLineSellPriceAction;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.GetDashboardBlock" d:TargetPath="|Ajsuth.Commerce.Engine.GetDashboardBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />

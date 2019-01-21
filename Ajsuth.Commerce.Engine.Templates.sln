@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajsuth.Commerce.Engine.Cart
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajsuth.Commerce.Engine.CartLineSellPriceAction", "src\Item Templates\Rules\Actions\Ajsuth.Commerce.Engine.CartLineSellPriceAction\Ajsuth.Commerce.Engine.CartLineSellPriceAction.csproj", "{5023B11E-821E-4485-B8DD-24BBA03C78D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajsuth.Commerce.Engine.GetDashboardBlock", "src\Item Templates\Pipelines\Blocks\Ajsuth.Commerce.Engine.GetDashboardBlock\Ajsuth.Commerce.Engine.GetDashboardBlock.csproj", "{35488142-610D-44FA-80FA-6780F83DFB37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +233,10 @@ Global
 		{5023B11E-821E-4485-B8DD-24BBA03C78D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5023B11E-821E-4485-B8DD-24BBA03C78D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5023B11E-821E-4485-B8DD-24BBA03C78D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35488142-610D-44FA-80FA-6780F83DFB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35488142-610D-44FA-80FA-6780F83DFB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35488142-610D-44FA-80FA-6780F83DFB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35488142-610D-44FA-80FA-6780F83DFB37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -282,6 +288,7 @@ Global
 		{90EF0235-3299-4082-904E-4DB49DD2E7BA} = {ACD44152-84C4-461A-B46E-1FD9EC6F0ED0}
 		{A3875851-7DEF-4914-AC8C-C21FC1962605} = {DD22A77D-4FAC-4482-BE9B-8D2B1D8E6FA2}
 		{5023B11E-821E-4485-B8DD-24BBA03C78D8} = {DD22A77D-4FAC-4482-BE9B-8D2B1D8E6FA2}
+		{35488142-610D-44FA-80FA-6780F83DFB37} = {53CBA891-E3AA-42E1-ADE2-4D080CD0D37B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB684E97-574E-4DB9-8369-AE7ACB0F0801}

@@ -37,9 +37,7 @@ namespace $rootnamespace$
         public $safeitemname$(CommerceCommander commander)
 		    : base(null)
 		{
-
             this.Commander = commander;
-
         }
 
         /// <summary>

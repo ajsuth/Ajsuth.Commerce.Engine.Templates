@@ -10,10 +10,12 @@ namespace $rootnamespace$
     using Sitecore.Commerce.EntityViews;
     using Sitecore.Framework.Conditions;
     using Sitecore.Framework.Pipelines;
+    using System;
+    using System.Linq;
     using System.Threading.Tasks;
 
     /// <summary>
-    /// Defines a get navigation view pipeline block
+    /// Defines a get dashboard pipeline block
     /// </summary>
     /// <seealso>
     ///     <cref>
@@ -21,13 +23,13 @@ namespace $rootnamespace$
     ///         Sitecore.Commerce.EntityViews.EntityView, Sitecore.Commerce.Core.CommercePipelineExecutionContext}
     ///     </cref>
     /// </seealso>
-    [PipelineDisplayName("Change to <Project>Constants.Pipelines.Blocks.Get$entity$NavigationView")]
+    [PipelineDisplayName("Change to <Project>Constants.Pipelines.Blocks.Get$entity$DashboardView")]
     public class $safeitemname$ : PipelineBlock<EntityView, EntityView, CommercePipelineExecutionContext>
     {
         /// <inheritdoc />
         /// <summary>Initializes a new instance of the <see cref="T:$rootnamespace$.$safeitemname$" /> class.</summary>
         public $safeitemname$()
-            : base(null)
+          : base(null)
         {
         }
 
@@ -43,21 +45,20 @@ namespace $rootnamespace$
         /// <returns>
         /// The current <see cref="Sitecore.Commerce.EntityViews.EntityView"/>.
         /// </returns>
-        public override Task<EntityView> Run(EntityView entityView, CommercePipelineExecutionContext context)
+        public override async Task<EntityView> Run(EntityView entityView, CommercePipelineExecutionContext context)
         {
-            Condition.Requires(entityView).IsNotNull($"{Name}: The argument cannot be null.");
+            Condition.Requires(entityView).IsNotNull($"{this.Name}: The argument cannot be null.");
 
-            var dashboardName = context.GetPolicy<Known$entity$ViewsPolicy>().$entity$Dashboard;
-
-            entityView.ChildViews.Add(new EntityView
+            var entityViewArgument = context.CommerceContext.GetObjects<EntityViewArgument>().FirstOrDefault();
+            if (string.IsNullOrEmpty(entityViewArgument?.ViewName) ||
+                    !entityViewArgument.ViewName.Equals(context.GetPolicy<Known$entity$ViewsPolicy>().$entity$Dashboard, StringComparison.OrdinalIgnoreCase))
             {
-                Name = dashboardName,
-                ItemId = dashboardName,
-                Icon = "about",
-                DisplayRank = 100
-            });
+                return entityView;
+            }
 
-            return Task.FromResult(entityView);
+            entityView.Icon = "information";
+
+            return await Task.FromResult(entityView);
         }
     }
 }
