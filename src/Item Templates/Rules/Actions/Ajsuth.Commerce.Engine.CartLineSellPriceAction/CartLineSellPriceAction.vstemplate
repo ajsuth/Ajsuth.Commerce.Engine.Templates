@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Cart Line Action</Name>
-    <Description>Creates a cart line action definition. Appends 'Action.cs' to Item Name.</Description>
+    <Name>Cart Line Sell Price Action</Name>
+    <Description>Creates a cart line action definition for overriding the SellPrice. Appends 'Action.cs' to Item Name.</Description>
     <Icon>Sitecore.ico</Icon>
-    <TemplateID>cfe3512b-d364-4517-b2c0-763d8167be5a</TemplateID>
+    <TemplateID>b178dae8-7936-43b2-a7d5-4351c9dadef1</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
-    <SortOrder>560</SortOrder>
+    <SortOrder>570</SortOrder>
     <DefaultName>CartLineAction.cs</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References/>
-    <ProjectItem TargetFileName="$fileinputname$Action.cs" ReplaceParameters="true">CartLineAction.cs</ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$Action.cs" ReplaceParameters="true">CartLineSellPriceAction.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

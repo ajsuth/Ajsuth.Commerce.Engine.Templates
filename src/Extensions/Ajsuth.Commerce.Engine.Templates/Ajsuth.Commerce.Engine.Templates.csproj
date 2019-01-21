@@ -202,9 +202,23 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Rules\Actions\Ajsuth.Commerce.Engine.CartLineAction2\Ajsuth.Commerce.Engine.CartLineAction2.csproj">
+      <Project>{A3875851-7DEF-4914-AC8C-C21FC1962605}</Project>
+      <Name>Ajsuth.Commerce.Engine.CartLineAction2</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\..\Item Templates\Rules\Actions\Ajsuth.Commerce.Engine.CartLineAction\Ajsuth.Commerce.Engine.CartLineAction.csproj">
       <Project>{5C0EB238-16ED-4877-B49A-C4C19D1DF399}</Project>
       <Name>Ajsuth.Commerce.Engine.CartLineAction</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Item Templates\Rules\Actions\Ajsuth.Commerce.Engine.CartLineSellPriceAction\Ajsuth.Commerce.Engine.CartLineSellPriceAction.csproj">
+      <Project>{5023B11E-821E-4485-B8DD-24BBA03C78D8}</Project>
+      <Name>Ajsuth.Commerce.Engine.CartLineSellPriceAction</Name>
       <VSIXSubPath>ItemTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>

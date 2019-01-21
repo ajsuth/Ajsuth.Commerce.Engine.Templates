@@ -11,7 +11,6 @@ namespace $rootnamespace$
     using Sitecore.Commerce.Plugin.Pricing;
     using Sitecore.Framework.Rules;
     using System;
-    using System.Collections.Generic;
     using System.Linq;
 
     /// <inheritdoc />
@@ -19,7 +18,7 @@ namespace $rootnamespace$
     /// Defines a cart line action
     /// </summary>
     [EntityIdentifier(nameof($safeitemname$))]
-    public class $safeitemname$ : ICartLineAction
+    public class $safeitemname$ : CartTargetItemId, ICartLineAction
     {
         /// <summary>
         /// The execute.
@@ -39,8 +38,8 @@ namespace $rootnamespace$
 
             /* Add business logic here to validate custom parameters */
 
-            var lines = new List<CartLineComponent>();
-            
+            var lines = this.MatchingLines(context).ToList();
+
             /* Add business logic here to determine applicable line items for discount */
 
             if (!lines.Any())

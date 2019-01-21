@@ -40,7 +40,7 @@ namespace $rootnamespace$
             /* Add business logic here to validate custom parameters */
 
             var lines = new List<CartLineComponent>();
-            
+
             /* Add business logic here to determine applicable line items for discount */
 
             if (!lines.Any())
@@ -72,17 +72,18 @@ namespace $rootnamespace$
                                 MidpointRounding.ToEven);
                 }
 
-                discountValue *= decimal.MinusOne;
+                var amount = (line.GetPolicy<PurchaseOptionMoneyPolicy>().SellPrice.Amount - discountValue) * decimal.MinusOne;
                 line.Adjustments.Add(new CartLineLevelAwardedAdjustment()
                 {
                     Name = (propertiesModel?.GetPropertyValue("PromotionText") as string ?? discount),
                     DisplayName = (propertiesModel?.GetPropertyValue("PromotionCartText") as string ?? discount),
-                    Adjustment = new Money(commerceContext.CurrentCurrency(), discountValue),
+                    Adjustment = new Money(commerceContext.CurrentCurrency(), amount),
                     AdjustmentType = discount,
                     IsTaxable = false,
                     AwardingBlock = nameof($safeitemname$)
                 });
-                totals.Lines[line.Id].SubTotal.Amount += discountValue;
+                line.GetPolicy<PurchaseOptionMoneyPolicy>().SellPrice.Amount = discountValue;
+                totals.Lines[line.Id].SubTotal.Amount = discountValue;
                 line.GetComponent<MessagesComponent>().AddMessage(
                     commerceContext.GetPolicy<KnownMessageCodePolicy>().Promotions,
                     $"PromotionApplied: {propertiesModel?.GetPropertyValue("PromotionId") ?? nameof($safeitemname$)}");
