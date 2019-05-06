@@ -1,10 +1,10 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="ConfigureServiceApiBlock.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+//   Copyright (c) Sitecore Corporation 1999-$year$
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace $safeprojectname$
+namespace $safeprojectname$.Pipelines.Blocks
 {
     using System.Threading.Tasks;
 
@@ -25,7 +25,7 @@ namespace $safeprojectname$
     ///         Sitecore.Commerce.Core.CommercePipelineExecutionContext}
     ///     </cref>
     /// </seealso>
-    [PipelineDisplayName("SamplePluginConfigureServiceApiBlock")]
+    [PipelineDisplayName(Constants.Pipelines.Blocks.ConfigureServiceApi)]
     public class ConfigureServiceApiBlock : PipelineBlock<ODataConventionModelBuilder, ODataConventionModelBuilder, CommercePipelineExecutionContext>
     {
         /// <summary>

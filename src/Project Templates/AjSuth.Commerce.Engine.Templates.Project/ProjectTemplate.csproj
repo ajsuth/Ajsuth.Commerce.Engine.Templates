@@ -18,8 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="ConfigureServiceApiBlock.cs" />
+    <Content Include="Pipelines\Blocks\ConfigureServiceApiBlock.cs" />
     <Content Include="ConfigureSitecore.cs" />
+    <Content Include="Constants.cs" />
     <Folder Include="Commands\" />
     <Folder Include="Components\" />
     <Folder Include="Controllers\" />
@@ -27,8 +28,11 @@
     <Folder Include="Models\" />
     <Folder Include="Pipelines\" />
     <Folder Include="Pipelines\Arguments\" />
-    <Folder Include="Pipelines\Blocks" />
+    <Folder Include="Pipelines\Blocks\" />
     <Folder Include="Policies\" />
+    <Folder Include="Rules\" />
+    <Folder Include="Rules\Actions\" />
+    <Folder Include="Rules\Conditions\" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AjSuth.Commerce.Engine.Templates.Project")]
+[assembly: AssemblyTitle("Ajsuth.Commerce.Engine.Templates.Project")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AjSuth.Commerce.Engine.Templates.Project")]
+[assembly: AssemblyProduct("Ajsuth.Commerce.Engine.Templates.Project")]
 [assembly: AssemblyCopyright("Copyright © 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

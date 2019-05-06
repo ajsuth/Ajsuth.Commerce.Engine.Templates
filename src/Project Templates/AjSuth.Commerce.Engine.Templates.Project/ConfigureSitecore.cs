@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="ConfigureSitecore.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+//   Copyright (c) Sitecore Corporation 1999-$year$
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -29,15 +29,13 @@ namespace $safeprojectname$
             services.RegisterAllPipelineBlocks(assembly);
 
             // Configure pipelines
-            // services.Sitecore().Pipelines(config => config
+            services.Sitecore().Pipelines(config => config
 
-            //  .AddPipeline<ISamplePipeline, SamplePipeline>(
-            //         configure =>
-            //             {
-            //                 configure.Add<SampleBlock>();
-            //             })
+                .ConfigurePipeline<IConfigureServiceApiPipeline>(pipeline => pipeline
+                    .Add<Pipelines.Blocks.ConfigureServiceApiBlock>()
+                )
 
-            //    .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure.Add<ConfigureServiceApiBlock>()));
+            );
 
             services.RegisterAllCommands(assembly);
         }

@@ -14,8 +14,9 @@
   </TemplateData>
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true">ConfigureServiceApiBlock.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Pipelines\Blocks\ConfigureServiceApiBlock.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true">ConfigureSitecore.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Constants.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
