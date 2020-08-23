@@ -2,13 +2,13 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Policy Set</Name>
-    <Description>An empty Policy Set definition</Description>
+    <Description>Creates an empty Policy Set definition. Appends 'PolicySet.json' to class name for follow naming convention '&lt;plugin name&gt;PolicySet'.</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>d0abcc04-7139-4e9b-b384-8dca1aafd126</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
-    <SortOrder>700</SortOrder>
+    <SortOrder>710</SortOrder>
     <DefaultName>PolicySet.json</DefaultName>
   </TemplateData>
   <TemplateContent>

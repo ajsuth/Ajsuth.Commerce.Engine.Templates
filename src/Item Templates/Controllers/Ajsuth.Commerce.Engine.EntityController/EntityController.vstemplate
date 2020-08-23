@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Entity Controller</Name>
-    <Description>Creates an empty Entity Controller definition. Appends Controller.cs to Item Name.</Description>
+    <Description>Creates an empty Entity Controller definition. Appends 'Controller.cs' to class name for follow naming convention '&lt;entity name&gt;Controller'.</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>04cc0846-8355-49ca-a9a1-fd42d8e6d1e4</TemplateID>
     <ProjectType>CSharp</ProjectType>

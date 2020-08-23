@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Pipeline</Name>
-    <Description>A Sitecore Commerce Pipeline definition and interface</Description>
+    <Description>Creates Pipeline definition with interface. Appends 'Pipeline.cs' to the class name for follow naming convention '&lt;pipeline name&gt;Pipeline'.</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>c022b398-7bbf-41d1-af2a-21f80f8fc48a</TemplateID>
     <ProjectType>CSharp</ProjectType>

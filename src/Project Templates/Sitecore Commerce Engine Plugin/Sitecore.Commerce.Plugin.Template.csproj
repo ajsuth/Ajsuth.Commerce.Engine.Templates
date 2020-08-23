@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>The Sitecore Commerce Sample Plugin.</Description>
+    <Authors>Sitecore</Authors>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageTags>$(PackageTags);Commerce;Plugin;</PackageTags>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+   
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Commerce.Core" Version="6.0.*" />
+  </ItemGroup>
+   
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Components\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Entities\" />
+    <Folder Include="FrameworkExtensions\" />
+    <Folder Include="Minions\" />
+    <Folder Include="Models\" />
+    <Folder Include="Pipelines\Arguments\" />
+    <Folder Include="Pipelines\Blocks\DoActions\" />
+    <Folder Include="Pipelines\Blocks\EntityViews\" />
+    <Folder Include="Policies\" />
+    <Folder Include="Rules\Conditions\" />
+    <Folder Include="Rules\Actions\" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1603,NU5048</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1603,NU5048</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+</Project>

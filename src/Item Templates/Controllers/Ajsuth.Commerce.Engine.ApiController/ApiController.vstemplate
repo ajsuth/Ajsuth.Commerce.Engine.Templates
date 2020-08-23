@@ -2,14 +2,14 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Api Controller</Name>
-    <Description>Creates an empty API Controller definition. Name will be ignored. Only add to a project once!</Description>
+    <Description>Creates an empty API Controller definition. Name will be ignored. Only one ApiController should exist per project!</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>41dab9ea-dd91-46c9-9973-c9056009091f</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <SortOrder>150</SortOrder>
-    <DefaultName>ApiController</DefaultName>
+    <DefaultName>ApiController.cs</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References />

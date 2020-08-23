@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Commerce Ops Controller</Name>
+    <Description>Creates an empty API Controller definition. Name will be ignored. Only one CommerceOpsController should exist per project!</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>a53e1994-c225-4f95-8528-082ccc7758fd</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>155</SortOrder>
+    <DefaultName>CommerceOpsController.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="CommerceOpsController.cs" ReplaceParameters="true">CommerceOpsController.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

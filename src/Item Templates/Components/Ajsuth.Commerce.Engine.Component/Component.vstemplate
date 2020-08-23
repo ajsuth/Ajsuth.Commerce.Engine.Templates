@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
     <Name>Component</Name>
-    <Description>Creates an empty Component definition. Appends Component.cs to Item Name.</Description>
+    <Description>Creates an empty Component definition. Appends 'Component.cs' to class name for follow naming convention '&lt;component name&gt;Component'.</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>ef8dfaf8-f080-47c1-a6b3-66f5b4787448</TemplateID>
     <ProjectType>CSharp</ProjectType>

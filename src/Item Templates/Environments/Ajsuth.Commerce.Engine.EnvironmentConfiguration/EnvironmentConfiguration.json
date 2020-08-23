@@ -1,0 +1,29 @@
+﻿{
+  "$type": "Sitecore.Commerce.Core.CommerceEnvironment, Sitecore.Commerce.Core",
+  "ArtifactStoreId": /* Set artifact store id here */,
+  "Components": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.ManagedLists.ListMembershipsComponent, Sitecore.Commerce.Plugin.ManagedLists",
+        "Memberships": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "CommerceEnvironments"
+          ]
+        },
+        "Id": /* Generate 32 character hexadecimal id */
+      }
+    ]
+  },
+  "Id": "Entity-CommerceEnvironment-$safeitemrootname$",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "$safeitemrootname$",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+        /* Add policies and policy sets here */
+    ]
+  }
+}

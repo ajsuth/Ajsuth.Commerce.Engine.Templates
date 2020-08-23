@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Pipeline Block (Asynchronous)</Name>
+    <Description>Creates an empty asynchronous pipeline block definition. Appends 'Block.cs' to the class name for follow naming convention '&lt;pipeline block name&gt;Block'.</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>6be4d313-4cbf-4b43-a002-c8b8729dda00</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <SortOrder>445</SortOrder>
+    <DefaultName>AsyncPipelineBlock.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="$fileinputname$Block.cs" ReplaceParameters="true">AsyncPipelineBlock.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

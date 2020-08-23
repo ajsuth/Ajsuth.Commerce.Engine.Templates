@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Configure Ops Service Api Block</Name>
+    <Description>Creates a pipeline block definition, which configures the OData model for 'commerceops' endpoints. Name will be ignored. Only one ConfigureOpsServiceApiBlock should exist per project!</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>627f2e88-50c0-4f4f-8d9c-f7059dbc6c7b</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <SortOrder>465</SortOrder>
+    <DefaultName>ConfigureOpsServiceApiBlock.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem ReplaceParameters="true">ConfiguresOpsServiceApiBlock.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

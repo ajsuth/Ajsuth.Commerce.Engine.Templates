@@ -2,12 +2,12 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Configure Sitecore</Name>
-    <Description>Creates a configure services template, registering pipeline blocks, pipelines, and commands. Name will be ignored. Only add to a project once!</Description>
+    <Description>Creates a configure services template for registering commands, pipeline blocks, pipelines, and promotion actions and benefits. Name will be ignored. Only one ConfigureSitecore should exist per project!</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>1cb25c5d-0257-430f-aa92-759d017ee890</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
-    <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <SortOrder>750</SortOrder>
     <DefaultName>ConfigureSitecore.cs</DefaultName>
   </TemplateData>

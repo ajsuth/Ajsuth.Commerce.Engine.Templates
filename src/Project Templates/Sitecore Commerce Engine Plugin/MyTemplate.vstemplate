@@ -1,0 +1,47 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Sitecore Commerce Engine Plugin</Name>
+    <Description>Creates skeleton Sitecore Commerce Engine Plugin with folder structure and ConfigureServiceApiBlock.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Commerce.Plugin.Engine</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+	<LanguageTag>C#</LanguageTag>
+	<PlatformTag>Windows</PlatformTag>
+	<ProjectTypeTag>Plugin</ProjectTypeTag>
+	<ProjectTypeTag>Sitecore Commerce</ProjectTypeTag>
+	<ProjectTypeTag>XC 10</ProjectTypeTag>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Sitecore.Commerce.Plugin.Template.csproj" File="Sitecore.Commerce.Plugin.Template.csproj" ReplaceParameters="true">
+      <Folder Name="Commands" TargetFolderName="Commands" />
+      <Folder Name="Components" TargetFolderName="Components" />
+      <Folder Name="Controllers" TargetFolderName="Controllers" />
+      <Folder Name="Entities" TargetFolderName="Entities" />
+      <Folder Name="FrameworkExtensions" TargetFolderName="FrameworkExtensions" />
+      <Folder Name="Minions" TargetFolderName="Minions" />
+      <Folder Name="Models" TargetFolderName="Models" />
+      <Folder Name="Pipelines" TargetFolderName="Pipelines">
+        <Folder Name="Arguments" TargetFolderName="Arguments" />
+        <Folder Name="Blocks" TargetFolderName="Blocks">
+          <Folder Name="DoActions" TargetFolderName="DoActions" />
+          <Folder Name="EntityViews" TargetFolderName="EntityViews" />
+          <ProjectItem ReplaceParameters="true" TargetFileName="ConfigureServiceApiBlock.cs">ConfigureServiceApiBlock.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Policies" TargetFolderName="Policies" />
+      <Folder Name="Rules" TargetFolderName="Rules">
+        <Folder Name="Actions" TargetFolderName="Actions" />
+        <Folder Name="Conditions" TargetFolderName="Conditions" />
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConfigureSitecore.cs">ConfigureSitecore.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

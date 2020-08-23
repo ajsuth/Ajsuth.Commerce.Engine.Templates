@@ -2,12 +2,12 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Constants</Name>
-    <Description>Creates an empty Constants definition. Appends 'Constants.cs' to the class Name.</Description>
+    <Description>Creates an empty Constants definition. Appends 'Constants.cs' to the class name for follow naming convention '&lt;plugin name&gt;Constants'.</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>bcef75bf-5b85-40cc-bee8-70a9df111af0</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
-    <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <SortOrder>760</SortOrder>
     <DefaultName>Constants.cs</DefaultName>
   </TemplateData>

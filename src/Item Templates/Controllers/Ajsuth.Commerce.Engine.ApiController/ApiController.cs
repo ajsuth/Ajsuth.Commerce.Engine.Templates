@@ -4,31 +4,26 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Microsoft.AspNet.OData;
+using Microsoft.AspNetCore.Mvc;
+using Sitecore.Commerce.Core;
+using System;
+using System.Threading.Tasks;
+
 namespace $rootnamespace$
 {
-    using Microsoft.AspNetCore.Mvc;
-    using Sitecore.Commerce.Core;
-    using System;
-    using System.Threading.Tasks;
-    using System.Web.Http.OData;
-
-    /// <inheritdoc />
-    /// <summary>
-    /// Defines an api controller
-    /// </summary>
-    /// <seealso cref="T:Sitecore.Commerce.Core.CommerceController" />
-    [Route("api")]
-    public class ApiController : CommerceController
+    /// <summary>Defines the api controller</summary>
+    /// <seealso cref="CommerceODataController" />
+    public class ApiController : CommerceODataController
     {
-        /// <inheritdoc />
-        /// <summary>
-        /// Initializes a new instance of the <see cref="T:$rootnamespace$.ApiController" /> class.
-        /// </summary>
+        /// <summary>Initializes a new instance of the <see cref="ApiController" /> class.</summary>
         /// <param name="serviceProvider">The service provider.</param>
         /// <param name="globalEnvironment">The global environment.</param>
         public ApiController(IServiceProvider serviceProvider, CommerceEnvironment globalEnvironment)
             : base(serviceProvider, globalEnvironment)
         {
         }
+
+        /* Add endpoints here */
     }
 }

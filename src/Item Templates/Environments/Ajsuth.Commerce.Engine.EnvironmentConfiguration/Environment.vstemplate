@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Environment Configuration</Name>
+    <Description>Creates an empty Environment Configuration.More commonly, the 'PlugIn.Habitat.Commerce&lt;role&gt;-1.0.0.json' files will be copied as a base.</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>1813075c-8df9-4071-8f4a-c8eb69f383ac</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>700</SortOrder>
+    <DefaultName>EnvironmentConfiguration.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+    <ProjectItem ReplaceParameters="true">EnvironmentConfiguration.json</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

@@ -4,15 +4,14 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Sitecore.Commerce.Core;
+
 namespace $rootnamespace$
 {
-    using Sitecore.Commerce.Core;
-
-    /// <inheritdoc />
-    /// <summary>
-    /// The $safeitemname$.
-    /// </summary>
+    /// <summary>Defines the $fileinputname$ pipeline argument.</summary>
+    /// <seealso cref="PipelineArgument" />
     public class $safeitemname$ : PipelineArgument
     {
+        /* Add pipeline argument properties here */
     }
 }

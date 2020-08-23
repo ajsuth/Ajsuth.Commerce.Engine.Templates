@@ -1,24 +1,17 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="$safeitemrootname$.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+//   Copyright (c) Sitecore Corporation 1999-$year$
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Sitecore.Commerce.Core;
+using Sitecore.Framework.Pipelines;
+
 namespace $rootnamespace$
 {
-    using Sitecore.Commerce.Core;
-    using Sitecore.Framework.Pipelines;
-
-	/// <summary>
-	/// Defines the $safeitemrootname$ interface
-	/// </summary>
-	/// <seealso>
-	///     <cref>
-	///         Sitecore.Framework.Pipelines.IPipeline{PipelineArgumentOrEntity,
-	///         PipelineArgumentOrEntity, Sitecore.Commerce.Core.CommercePipelineExecutionContext}
-	///     </cref>
-	/// </seealso>
-	[PipelineDisplayName("[Insert Project Name].Pipeline.$safeitemrootname$")]
+	/// <summary>Defines the $fileinputname$ pipeline interface</summary>
+    /// <seealso cref="IPipeline{TInput, TOutput, TContext}" />
+	[PipelineDisplayName("Change to <Project>Constants.Pipeline.$fileinputname$")]
     public interface $safeitemrootname$ : IPipeline<PipelineArgumentOrEntity, PipelineArgumentOrEntity, CommercePipelineExecutionContext>
     {
     }

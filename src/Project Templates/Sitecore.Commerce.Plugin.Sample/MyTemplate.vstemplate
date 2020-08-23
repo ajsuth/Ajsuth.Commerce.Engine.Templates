@@ -1,0 +1,57 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Sitecore.Commerce.Plugin.Sample</Name>
+    <Description>Creates the reference Sitecore Commerce Plugin Sample that previously was shipped with the Sitecore Commerce SDK and is now available from https://sitecore.myget.org/gallery/sc-commerce-packages</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Sitecore.Commerce.Plugin.Sample</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+	<LanguageTag>C#</LanguageTag>
+	<PlatformTag>Windows</PlatformTag>
+	<ProjectTypeTag>Plugin</ProjectTypeTag>
+	<ProjectTypeTag>Sitecore Commerce</ProjectTypeTag>
+	<ProjectTypeTag>XC 10</ProjectTypeTag>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Sitecore.Commerce.Plugin.Sample.csproj" File="Sitecore.Commerce.Plugin.Sample.csproj" ReplaceParameters="true">
+      <Folder Name="Commands" TargetFolderName="Commands">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleCommand.cs">SampleCommand.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Components" TargetFolderName="Components">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleComponent.cs">SampleComponent.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CommandsController.cs">CommandsController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleController.cs">SampleController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Entities" TargetFolderName="Entities">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleEntity.cs">SampleEntity.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleModel.cs">SampleModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Pipelines" TargetFolderName="Pipelines">
+        <Folder Name="Arguments" TargetFolderName="Arguments">
+          <ProjectItem ReplaceParameters="true" TargetFileName="SampleArgument.cs">SampleArgument.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Blocks" TargetFolderName="Blocks">
+          <ProjectItem ReplaceParameters="true" TargetFileName="SampleBlock.cs">SampleBlock.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISamplePipeline.cs">ISamplePipeline.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SamplePipeline.cs">SamplePipeline.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Policies" TargetFolderName="Policies">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SamplePolicy.cs">SamplePolicy.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConfigureServiceApiBlock.cs">ConfigureServiceApiBlock.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConfigureSitecore.cs">ConfigureSitecore.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

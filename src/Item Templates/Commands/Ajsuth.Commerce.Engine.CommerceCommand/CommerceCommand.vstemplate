@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>CommerceCommand</Name>
-    <Description>Creates an empty Command definition. Appends 'Command.cs' to Item Name.</Description>
+    <Name>Commerce Command</Name>
+    <Description>Creates an empty Commerce Command definition. Appends 'Command.cs' to class name for follow naming convention '&lt;command name&gt;Command'.</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>ef8dfaf8-f080-47c1-a6b3-66f5b4787447</TemplateID>
     <ProjectType>CSharp</ProjectType>
@@ -12,11 +12,7 @@
     <DefaultName>CommerceCommand.cs</DefaultName>
   </TemplateData>
   <TemplateContent>
-    <References>
-      <Reference>
-        <Assembly>System</Assembly>
-      </Reference>
-    </References>
+    <References />
     <ProjectItem TargetFileName="$fileinputname$Command.cs" ReplaceParameters="true">CommerceCommand.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Pipeline Argument</Name>
-    <Description>Creates an empty Pipeline Argument definition. Appends Argument.cs to Item Name.</Description>
+    <Description>Creates an empty Pipeline Argument definition. Appends 'Argument.cs' to class name for follow naming convention '&lt;pipeline argument name&gt;Argument'.</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>7d1d0e46-f483-4651-80f2-72ef719eb4ff</TemplateID>
     <ProjectType>CSharp</ProjectType>

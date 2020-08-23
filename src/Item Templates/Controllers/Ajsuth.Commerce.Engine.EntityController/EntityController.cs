@@ -4,31 +4,28 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Microsoft.AspNet.OData;
+using Microsoft.AspNetCore.Mvc;
+using Sitecore.Commerce.Core;
+using System;
+using System.Threading.Tasks;
+
 namespace $rootnamespace$
 {
-    using Microsoft.AspNetCore.Mvc; 
-    using Sitecore.Commerce.Core;
-    using System;
-    using System.Threading.Tasks;
-
-    /// <inheritdoc />
-    /// <summary>
-    /// Defines a controller
-    /// </summary>
-    /// <seealso cref="T:Sitecore.Commerce.Core.CommerceController" />
-    [Microsoft.AspNetCore.OData.EnableQuery]
-    [Route("api/$fileinputname$")]
-    public class $safeitemname$ : CommerceController
+    /// <summary>Defines the $fileinputname$ commerce entity controller</summary>
+    /// <seealso cref="CommerceODataController" />
+    [EnableQuery]
+    [ODataRoutePrefix("$fileinputname$")]
+    public class $safeitemname$ : CommerceODataController
     {
-        /// <inheritdoc />
-        /// <summary>
-        /// Initializes a new instance of the <see cref="T:$safeprojectname$.$safeitemname$" /> class.
-        /// </summary>
+        /// <summary>Initializes a new instance of the <see cref="$safeitemname$" /> class.</summary>
         /// <param name="serviceProvider">The service provider.</param>
         /// <param name="globalEnvironment">The global environment.</param>
         public $safeitemname$(IServiceProvider serviceProvider, CommerceEnvironment globalEnvironment)
             : base(serviceProvider, globalEnvironment)
         {
         }
+
+        /* Add endpoints here */
     }
 }

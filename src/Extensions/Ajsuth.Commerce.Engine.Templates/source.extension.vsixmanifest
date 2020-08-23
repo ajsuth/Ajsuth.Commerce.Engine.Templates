@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Ajsuth.Commerce.Engine.Templates.5cb15241-095c-42ed-bae7-cc84391447c6" Version="1.1" Language="en-US" Publisher="Andrew Sutherland" />
-        <DisplayName>Sitecore Commerce Engine Templates</DisplayName>
-        <Description xml:space="preserve">A collection of templates to assist with Sitecore Commerce development</Description>
+        <Identity Id="Ajsuth.Commerce.Engine.Templates.0eb5f538-94b6-41b8-b32d-31d01f5588a8" Version="10.0.0" Language="en-US" Publisher="Andrew Sutherland" />
+        <DisplayName>Sitecore Commerce Engine Templates (XC 10)</DisplayName>
+        <Description xml:space="preserve">A collection of templates to assist with Sitecore Experience Commerce 10.0 development.</Description>
         <Icon>Sitecore.ico</Icon>
+        <Tags>C#; Sitecore; Commerce; XC 10;</Tags>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,17.0)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
@@ -18,34 +19,25 @@
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.ApiController" d:TargetPath="|Ajsuth.Commerce.Engine.ApiController;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CommandsController" d:TargetPath="|Ajsuth.Commerce.Engine.CommandsController;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.EntityController" d:TargetPath="|Ajsuth.Commerce.Engine.EntityController;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Entities" d:TargetPath="|Ajsuth.Commerce.Engine.Entities;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.PolicySet" d:TargetPath="|Ajsuth.Commerce.Engine.PolicySet;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Minion" d:TargetPath="|Ajsuth.Commerce.Engine.Minion;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.MinionBoss" d:TargetPath="|Ajsuth.Commerce.Engine.MinionBoss;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Models" d:TargetPath="|Ajsuth.Commerce.Engine.Models;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Pipeline" d:TargetPath="|Ajsuth.Commerce.Engine.Pipeline;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.PipelineArgument" d:TargetPath="|Ajsuth.Commerce.Engine.PipelineArgument;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.PipelineBlock" d:TargetPath="|Ajsuth.Commerce.Engine.PipelineBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Policy" d:TargetPath="|Ajsuth.Commerce.Engine.Policy;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.ConfigureSitecore" d:TargetPath="|Ajsuth.Commerce.Engine.ConfigureSitecore;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Constants" d:TargetPath="|Ajsuth.Commerce.Engine.Constants;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CartAction" d:TargetPath="|Ajsuth.Commerce.Engine.CartAction;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Sitecore Commerce Engine Plugin.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CommerceCommand2" d:TargetPath="|Ajsuth.Commerce.Engine.CommerceCommand2;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CommerceEntity" d:TargetPath="|Ajsuth.Commerce.Engine.CommerceEntity;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:TargetPath="|Ajsuth.Commerce.Engine.Pipeline;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:TargetPath="|Ajsuth.Commerce.Engine.Policy;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:TargetPath="|Ajsuth.Commerce.Engine.ConfigureSitecore;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:TargetPath="|Ajsuth.Commerce.Engine.Constants;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Sitecore.Commerce.Plugin.Sample.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.ConfigureOpsServiceApiBlock" d:TargetPath="|Ajsuth.Commerce.Engine.ConfigureOpsServiceApiBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Model" d:TargetPath="|Ajsuth.Commerce.Engine.Model;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.AsyncPipelineBlock" d:TargetPath="|Ajsuth.Commerce.Engine.AsyncPipelineBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.ConfigureServiceApiBlock" d:TargetPath="|Ajsuth.Commerce.Engine.ConfigureServiceApiBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.InventoryItemCondition" d:TargetPath="|Ajsuth.Commerce.Engine.InventoryItemCondition;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.Templates.Project" d:TargetPath="|Ajsuth.Commerce.Engine.Templates.Project;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CartLineAction" d:TargetPath="|Ajsuth.Commerce.Engine.CartLineAction;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.GetEntityNavigationBlock" d:TargetPath="|Ajsuth.Commerce.Engine.GetEntityNavigationBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.TargetItemCondition" d:TargetPath="|Ajsuth.Commerce.Engine.TargetItemCondition;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CustomerOrderCondition" d:TargetPath="|Ajsuth.Commerce.Engine.CustomerOrderCondition;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CartsCondition" d:TargetPath="|Ajsuth.Commerce.Engine.CartsCondition;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.FulfillmentCondition" d:TargetPath="|Ajsuth.Commerce.Engine.FulfillmentCondition;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.InventoryItemCondition2" d:TargetPath="|Ajsuth.Commerce.Engine.InventoryItemCondition2;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.ShopsCondition" d:TargetPath="|Ajsuth.Commerce.Engine.ShopsCondition;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CartLineAction2" d:TargetPath="|Ajsuth.Commerce.Engine.CartLineAction2;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CartLineSellPriceAction" d:TargetPath="|Ajsuth.Commerce.Engine.CartLineSellPriceAction;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.GetDashboardBlock" d:TargetPath="|Ajsuth.Commerce.Engine.GetDashboardBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.SyncPipelineBlock" d:TargetPath="|Ajsuth.Commerce.Engine.SyncPipelineBlock;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.PolicySet" d:TargetPath="|Ajsuth.Commerce.Engine.PolicySet;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.EnvironmentConfiguration" d:TargetPath="|Ajsuth.Commerce.Engine.EnvironmentConfiguration;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Ajsuth.Commerce.Engine.CommerceOpsController" d:TargetPath="|Ajsuth.Commerce.Engine.CommerceOpsController;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
 </PackageManifest>

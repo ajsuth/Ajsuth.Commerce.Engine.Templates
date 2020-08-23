@@ -4,16 +4,14 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Sitecore.Commerce.Core;
+
 namespace $rootnamespace$
 {
-    using Sitecore.Commerce.Core;
-
-    /// <inheritdoc />
-    /// <summary>
-    /// Defines a policy
-    /// </summary>
-    /// <seealso cref="T:Sitecore.Commerce.Core.Policy" />
+    /// <summary>Defines the $fileinputname$ policy.</summary>
+    /// <seealso cref="Policy" />
     public class $safeitemname$ : Policy
     {
+        /* Add policy properties here */
     }
 }

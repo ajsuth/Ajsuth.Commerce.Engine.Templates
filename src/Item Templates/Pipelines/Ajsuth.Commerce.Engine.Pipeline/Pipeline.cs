@@ -1,32 +1,21 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="$safeitemname$.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+//   Copyright (c) Sitecore Corporation 1999-$year$
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Microsoft.Extensions.Logging;
+using Sitecore.Commerce.Core;
+using Sitecore.Framework.Pipelines;
+
 namespace $rootnamespace$
 {
-    using Microsoft.Extensions.Logging;
-    using Sitecore.Commerce.Core;
-    using Sitecore.Framework.Pipelines;
-
-    /// <inheritdoc />
-    /// <summary>
-    ///  Defines the $safeitemname$ pipeline.
-    /// </summary>
-    /// <seealso>
-    ///     <cref>
-    ///         Sitecore.Commerce.Core.CommercePipeline{Namespace.PipelineArgumentOrEntity,
-    ///         Namespace.PipelineArgumentOrEntity}
-    ///     </cref>
-    /// </seealso>
-    /// <seealso cref="T:$rootnamespace$.$safeitemrootname$" />
+    /// <summary>Defines the $fileinputname$ pipeline.</summary>
+    /// <seealso cref="CommercePipeline{TArg, TResult}" />
+    /// <seealso cref="I$safeitemrootname$" />
     public class $safeitemrootname$ : CommercePipeline<PipelineArgumentOrEntity, PipelineArgumentOrEntity>, I$safeitemrootname$
 	{
-		/// <inheritdoc />
-		/// <summary>
-		/// Initializes a new instance of the <see cref="T:$rootnamespace$.$safeitemname$" /> class.
-		/// </summary>
+		/// <summary>Initializes a new instance of the <see cref="$safeitemname$" /> class.</summary>
 		/// <param name="configuration">The configuration.</param>
 		/// <param name="loggerFactory">The logger factory.</param>
 		public $safeitemrootname$(IPipelineConfiguration<I$safeitemname$> configuration, ILoggerFactory loggerFactory)

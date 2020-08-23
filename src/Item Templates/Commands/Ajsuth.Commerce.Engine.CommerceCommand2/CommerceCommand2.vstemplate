@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Commerce Command with Transaction Scope</Name>
+    <Description>Creates an empty Commerce Command definition, using the PerformTransaction method for transaction scope. Appends 'Command.cs' to class name for follow naming convention '&lt;command name&gt;Command'.</Description>
+    <Icon>Sitecore.ico</Icon>
+    <TemplateID>e075e7c9-f06e-4c6f-ab6d-57935937fb49</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>60</SortOrder>
+    <DefaultName>CommerceCommand.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="$fileinputname$Command.cs" ReplaceParameters="true">CommerceCommand2.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

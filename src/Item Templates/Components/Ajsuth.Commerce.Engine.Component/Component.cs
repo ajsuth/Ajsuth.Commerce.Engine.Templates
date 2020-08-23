@@ -4,16 +4,14 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Sitecore.Commerce.Core;
+
 namespace $rootnamespace$
 {
-    using Sitecore.Commerce.Core;
-
-    /// <inheritdoc />
-    /// <summary>
-    /// The $safeitemname$.
-    /// </summary>
+    /// <summary>Defines the $fileinputname$ component.</summary>
+    /// <seealso cref="Component" />
     public class $safeitemname$ : Component
     {
+        /* Add component properties here */
     }
 }
-

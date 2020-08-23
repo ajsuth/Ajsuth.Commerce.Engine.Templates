@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Policy</Name>
-    <Description>An empty Policy definition. Appends Policy.cs to Item Name.</Description>
+    <Description>An empty Policy definition. Appends 'Policy.cs' to class name for follow naming convention '&lt;policy name&gt;Policy'.</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>99fbb7a2-502d-447e-8f94-e0e0e1465052</TemplateID>
     <ProjectType>CSharp</ProjectType>

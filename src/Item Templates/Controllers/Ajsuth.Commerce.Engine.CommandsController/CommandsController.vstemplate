@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Commands Controller</Name>
-    <Description>Creates an empty Commands Controller definition. Name will be ignored. Only add to a project once!</Description>
+    <Description>Creates an empty Commands Controller definition. Name will be ignored. Only one CommandsController should exist per project!</Description>
     <Icon>Sitecore.ico</Icon>
     <TemplateID>1ef788a0-93dd-44d6-8cce-4911a9957c0f</TemplateID>
     <ProjectType>CSharp</ProjectType>

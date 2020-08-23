@@ -6,9 +6,7 @@
 
 namespace $rootnamespace$
 {
-    /// <summary>
-    /// The $safeitemrootname$.
-    /// </summary>
+    /// <summary>The $fileinputname$ constants.</summary>
     public class $safeitemrootname$
     {
         /// <summary>
