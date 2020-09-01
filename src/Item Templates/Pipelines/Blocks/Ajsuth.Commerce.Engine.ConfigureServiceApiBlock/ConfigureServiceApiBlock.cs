@@ -17,7 +17,7 @@ namespace $rootnamespace$
     [PipelineDisplayName("Change to <Project>Constants.Pipelines.Blocks.ConfigureServiceApi")]
     public class ConfigureServiceApiBlock : SyncPipelineBlock<ODataConventionModelBuilder, ODataConventionModelBuilder, CommercePipelineExecutionContext>
     {
-        /// <summary>The execute.</summary>
+        /// <summary>Maps defined Commerce Engine data types and endpoints to the OData EDM for the '/api' routes.</summary>
         /// <param name="modelBuilder">The <see cref="ODataConventionModelBuilder"/>.</param>
         /// <param name="context">The context.</param>
         /// <returns>The <see cref="ODataConventionModelBuilder"/>.</returns>

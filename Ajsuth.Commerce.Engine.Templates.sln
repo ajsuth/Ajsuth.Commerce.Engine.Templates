@@ -67,8 +67,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajsuth.Commerce.Engine.Cart
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajsuth.Commerce.Engine.InventoryItemCondition", "src\Item Templates\Rules\Conditions\Ajsuth.Commerce.Engine.InventoryItemCondition\Ajsuth.Commerce.Engine.InventoryItemCondition.csproj", "{A137CF02-B9EA-4819-8DB5-EE24E98DB135}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Templates", "Project Templates", "{C1B06E1E-8885-45A9-91A9-341E8BC55ABB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajsuth.Commerce.Engine.CartLineAction", "src\Item Templates\Rules\Actions\Ajsuth.Commerce.Engine.CartLineAction\Ajsuth.Commerce.Engine.CartLineAction.csproj", "{5C0EB238-16ED-4877-B49A-C4C19D1DF399}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajsuth.Commerce.Engine.GetEntityNavigationBlock", "src\Item Templates\Pipelines\Blocks\Ajsuth.Commerce.Engine.GetEntityNavigationBlock\Ajsuth.Commerce.Engine.GetEntityNavigationBlock.csproj", "{1BB939CC-A8EF-4E0E-A978-34163BA3A144}"

@@ -4,12 +4,12 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Sitecore.Commerce.Core;
+using Sitecore.Framework.Conditions;
+using Sitecore.Framework.Pipelines;
+
 namespace $rootnamespace$
 {
-    using Sitecore.Commerce.Core;
-    using Sitecore.Framework.Conditions;
-    using Sitecore.Framework.Pipelines;
-
     /// <summary>Defines the synchronous executing $fileinputname$ pipeline block</summary>
     /// <seealso cref="SyncPipelineBlock{TInput, TOutput, TContext}" />
     [PipelineDisplayName("Change to <Project>Constants.Pipelines.Blocks.$fileinputname$")]
@@ -26,7 +26,7 @@ namespace $rootnamespace$
             this.Commander = commander;
         }
 
-        /// <summary>The execute.</summary>
+        /// <summary>Executes the pipeline block's code logic.</summary>
         /// <param name="arg">The pipeline argument.</param>
         /// <param name="context">The context.</param>
         /// <returns>The <see cref="PipelineArgument"/>.</returns>

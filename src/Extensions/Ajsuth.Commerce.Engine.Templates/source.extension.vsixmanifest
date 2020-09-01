@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Ajsuth.Commerce.Engine.Templates.0eb5f538-94b6-41b8-b32d-31d01f5588a8" Version="10.0.0" Language="en-US" Publisher="Andrew Sutherland" />
+        <Identity Id="Ajsuth.Commerce.Engine.Templates.0eb5f538-94b6-41b8-b32d-31d01f5588a8" Version="10.0.1" Language="en-US" Publisher="Andrew Sutherland" />
         <DisplayName>Sitecore Commerce Engine Templates (XC 10)</DisplayName>
         <Description xml:space="preserve">A collection of templates to assist with Sitecore Experience Commerce 10.0 development.</Description>
         <Icon>Sitecore.ico</Icon>

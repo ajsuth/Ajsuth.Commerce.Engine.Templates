@@ -17,7 +17,7 @@ namespace $rootnamespace$
             // /// <summary>
             // /// The [sample] pipeline name.
             // /// </summary>
-            // public const string [sample] = "[project friendly name].Pipeline.[sample]";
+            // public const string [sample] = "$fileinputname$.Pipeline.[sample]";
 
             /// <summary>
             /// The names of the pipeline blocks.
@@ -27,7 +27,7 @@ namespace $rootnamespace$
                 // /// <summary>
                 // /// The [sample] block name.
                 // /// </summary>
-                // public const string [sample] = "[project friendly name].Block.[sample]";
+                // public const string [sample] = "$fileinputname$.Block.[sample]";
             }
         }
 
